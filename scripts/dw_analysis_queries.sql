@@ -1,0 +1,5 @@
+-- 1. Query the top 5 sales by product
+-- 2. Query the top 5 sales by category agrupation
+-- 3. Query the least 5 sales by category agrupation
+-- 4. Query the top 5 sales by title and subtitle agrupation
+-- 5. Query the top 3 products that has greatest sales by category
