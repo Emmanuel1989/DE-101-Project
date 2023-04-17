@@ -38,14 +38,16 @@ The project is divided into the following phases:
 
 ## Solution
 
-- Open nike_sales.sql and create the table in snowflake **this will be our staging table**
-- Open fact_and_dimensions.sql and create the needed tables in snowflake.
-- Create the store produre **before running the docker and dag process**
-- Run docker-compose up -d
+- Open **nike_sales.sql** and create the table in snowflake **this will be our staging table**
+- Open **fact_and_dimensions.sql** file under scripts folder and create the needed tables in snowflake.
+- Create the store produre in snowflake **store_proc_fact_dim_tables.sql** before running the docker and dag process
+- Open terminal in the working directory and run command _docker-compose up -d_
 - Connect to airflow and install the package requirements
 
 1.  Connect to worker airflow-worker and install snowflake connector
     - pip install snowflake-connector-python
 2.  Check if airflow dag ran successfully
 
-- Execute the needed queries in **_dw_analysis_queries.sql_**
+    **Note:** _The ariflow dag will move the data from local folder or in memory pandas DF to staging_table and it will then call store procedure to move data to fact and dimension tables_
+
+- Last step execute the needed queries in **_dw_analysis_queries.sql_** file is located under scripts folder.
