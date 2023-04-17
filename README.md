@@ -46,5 +46,6 @@ The project is divided into the following phases:
 
 1.  Connect to worker airflow-worker and install snowflake connector
     - pip install snowflake-connector-python
+2.  Check if airflow dag ran successfully
 
 - Execute the needed queries in **_dw_analysis_queries.sql_**

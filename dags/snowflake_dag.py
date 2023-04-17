@@ -61,7 +61,7 @@ def create_staging_snowflake():
     with connect(
         account="NK31131",
         user="JESUSRAMOS1989",
-        password="Spark#@4321",
+        password="------",
         database="DB_TEST",
         warehouse="COMPUTE_WH",
         region="us-east-2.aws"
