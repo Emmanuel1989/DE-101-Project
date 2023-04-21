@@ -1,6 +1,4 @@
 -- 1. Query the top 5 sales by product
-
-
 select productid,title, sum(currentprice) as sumprice  from sales_fact fc 
     inner join product_desc pd on fc.productid = pd.id 
     group by productid, title 
